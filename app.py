@@ -33,6 +33,7 @@ chronic_disease_model = joblib.load('models/chronic_model.sav')
 hepatitis_model = joblib.load('models/hepititisc_model.sav')
 
 
+
 liver_model = joblib.load('models/liver_model.sav')# Load the lung cancer prediction model
 lung_cancer_model = joblib.load('models/lung_cancer_model.sav')
 
@@ -641,7 +642,9 @@ if selected == 'Jaundice prediction':  # pagetitle
     with col2:
         Albumin = st.number_input("Entre your Albumin") # 9 
     # code for prediction
+   
     jaundice_dig = ''
+    jaundice_model = joblib.load('models/jaundice_model.sav')
 
     # button
     if st.button("Jaundice test result"):
