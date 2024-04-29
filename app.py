@@ -60,7 +60,9 @@ with st.sidebar:
         default_index=0)
     
 
-
+if selected == 'About':
+    st.image('kbb.jpg', width=400)
+    
 # multiple disease prediction
 if selected == 'Disease Prediction': 
     # Create disease class and load ML model
