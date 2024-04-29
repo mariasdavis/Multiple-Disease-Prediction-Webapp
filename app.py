@@ -61,9 +61,9 @@ with st.sidebar:
     
 
 if selected == 'About':
-    st.title("Diabetes disease prediction")
+    st.title("About")
     image = Image.open('kbb.png')
-    st.image(image, caption='diabetes disease prediction')
+   
     
 # multiple disease prediction
 if selected == 'Disease Prediction': 
