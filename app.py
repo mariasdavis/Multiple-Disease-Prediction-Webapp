@@ -31,7 +31,7 @@ chronic_disease_model = joblib.load('models/chronic_model.sav')
 
 # Load the hepatitis prediction model
 hepatitis_model = joblib.load('models/hepititisc_model.sav')
-jaundice_model = joblib.load('models/jaundice_model.sav')
+
 
 
 
