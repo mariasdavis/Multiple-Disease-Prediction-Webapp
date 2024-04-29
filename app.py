@@ -47,7 +47,7 @@ with st.sidebar:
         'Heart disease Prediction',
         'Parkison Prediction',
         'Liver prediction',
-        'jaundice prediction',
+       
         'Hepatitis prediction',
         'Lung Cancer Prediction',
         'Chronic Kidney prediction',
