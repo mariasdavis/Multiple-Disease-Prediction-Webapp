@@ -52,7 +52,8 @@ with st.sidebar:
         'Lung Cancer Prediction',
         'Chronic Kidney prediction',
         'Breast Cancer Prediction',
-        'About'
+        'About',
+        'Contact Us'
 
     ],
         icons=['','activity', 'heart', 'person','person','person','person','bar-chart-fill'],
