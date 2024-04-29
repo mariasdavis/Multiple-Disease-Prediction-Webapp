@@ -52,6 +52,7 @@ with st.sidebar:
         'Lung Cancer Prediction',
         'Chronic Kidney prediction',
         'Breast Cancer Prediction',
+        'About'
      
 
     ],
