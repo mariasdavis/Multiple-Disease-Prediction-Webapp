@@ -60,9 +60,9 @@ with st.sidebar:
         default_index=0)
     
 if selected == 'About':
-    st.title("Heart disease prediction")
+    st.title(" ")
     image = Image.open('kbb.png')
-    st.image(image, caption='heart failuire')
+    st.image(image, caption='About Us')
 
     
 # multiple disease prediction
