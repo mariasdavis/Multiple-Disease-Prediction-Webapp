@@ -59,7 +59,10 @@ with st.sidebar:
         icons=['','activity', 'heart', 'person','person','person','person','bar-chart-fill'],
         default_index=0)
     
-
+if selected == 'About':
+    st.title("Heart disease prediction")
+    image = Image.open('heart2.jpg')
+    st.image(image, caption='heart failuire')
 
     
 # multiple disease prediction
