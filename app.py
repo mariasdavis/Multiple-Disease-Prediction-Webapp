@@ -61,7 +61,7 @@ with st.sidebar:
     
 
 if selected == 'About':
-    st.image('kbb.jpg', width=400)
+   image = Image.open('kbb.jpg')
     
 # multiple disease prediction
 if selected == 'Disease Prediction': 
