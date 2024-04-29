@@ -59,28 +59,13 @@ with st.sidebar:
         icons=['','activity', 'heart', 'person','person','person','person','bar-chart-fill'],
         default_index=0)
 
-#about
 if selected == 'About':
-# Discover Our Team Section
-st.title("Discover Our Team")
-st.write("As a team of passionate individuals, we embarked on a journey to create a user-friendly and efficient application to predict diseases such as Diabetes, Heart Disease, and Lung Cancer.")
+    st.title("About This Application")
+    st.write("Provide information about the application, purpose, underlying technology, data sources, and disclaimers.")
 
-st.subheader("Team Members:")
-st.write("""
-* **Kabir Miital** - Team Lead
-* **Aryan Singh**
-* **Ayush**
-""")
-
-st.subheader("Guide:")
-st.write("* **Dr. Gyanender Kumar, M.Tech, Ph.D** - Our mentor and guide, whose invaluable support and expertise have been instrumental in shaping this project.")
-
-st.write("""
-Throughout the development process, we have combined our diverse skills and knowledge to deliver a robust and accurate disease prediction system. We are committed to promoting health awareness and providing a valuable tool for individuals to assess their health risks.
-
-Thank you for choosing our Multiple Disease Prediction Web App. We hope it proves to be a valuable resource for you and others. 
-""")
-
+    # Discover Our Team Section (Ensure this is indented under the 'if' block)
+    st.title("Discover Our Team")
+    st.write("As a team of passionate individuals...") 
 
 
 # multiple disease prediction
