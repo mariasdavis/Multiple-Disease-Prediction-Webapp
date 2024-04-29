@@ -60,11 +60,7 @@ with st.sidebar:
         default_index=0)
     
 
-if selected == 'About':
-   st.title("Diabetes disease prediction")
-    image = Image.open('d3.jpg')
-    st.image(image, caption='diabetes disease prediction')
-   
+
     
 # multiple disease prediction
 if selected == 'Disease Prediction': 
