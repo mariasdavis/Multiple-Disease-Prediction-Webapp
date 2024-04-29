@@ -60,17 +60,33 @@ with st.sidebar:
         default_index=0)
     
 if selected == 'About':
-    # ... other 'About' section code...
+    st.title("About Our Team")
 
-    team_members = [  # Define your team members
-        "Kabir Miital - Team Lead",
-        "Aryan Singh",
-        "Ayush"
-    ] 
+    st.write("As a team of passionate individuals, we embarked on a journey to create a user-friendly and efficient application to predict diseases such as Diabetes, Heart Disease, and Lung Cancer.")
 
-    st.subheader("Team Members:")
-    for member in team_members: 
-        st.write(member)
+    # Team Members with Images (assuming lists are prepared)
+    col1, col2 = st.beta_columns(2)  # Create two columns
+    for member, image_path in zip(team_members, profile_pics):
+        with col1:
+            st.image(image_path, width=150)  # Adjust width as needed
+        with col2:
+            st.write(member)
+
+    # Guide Information
+    st.markdown("---")  # Horizontal divider (optional)
+    st.subheader("Guide:")
+    st.write("* Dr. Gyanender Kumar, M.Tech, Ph.D")
+    st.write("Our mentor and guide, whose invaluable support and expertise have been instrumental in shaping this project.")
+
+    # Development Process
+    st.write("**Development Process:**")
+    st.write("""
+    Throughout the development process, we have combined our diverse skills and knowledge to deliver a robust and accurate disease prediction system. We are committed to promoting health awareness and providing a valuable tool for individuals to assess their health risks.
+    """)
+
+    st.write("""
+    Thank you for choosing our Multiple Disease Prediction Web App. We hope it proves to be a valuable resource for you and others.
+    """)
 
 # multiple disease prediction
 if selected == 'Disease Prediction': 
