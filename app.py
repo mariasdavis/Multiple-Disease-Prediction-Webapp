@@ -65,6 +65,11 @@ if selected == 'About':
     st.write("As a team of passionate individuals, we embarked on a journey to create a user-friendly and efficient application to predict diseases such as Diabetes, Heart Disease, and Lung Cancer.")
 
     
+    team_members = [  # Define your team members
+        "Kabir Miital - Team Lead",
+        "Aryan Singh",
+        "Ayush"
+        
     # Guide Information
     st.markdown("---")  # Horizontal divider (optional)
     st.subheader("Guide:")
