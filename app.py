@@ -65,7 +65,7 @@ if selected == 'About':
     st.write("As a team of passionate individuals, we embarked on a journey to create a user-friendly and efficient application to predict diseases such as Diabetes, Heart Disease, and Lung Cancer.")
 
     # Team Members with Images (assuming lists are prepared)
-    col1, col2 = st.beta_columns(2)  # Create two columns
+    col1, col2 = st.columns(2)  # Create two columns
     for member, image_path in zip(team_members, profile_pics):
         with col1:
             st.image(image_path, width=150)  # Adjust width as needed
