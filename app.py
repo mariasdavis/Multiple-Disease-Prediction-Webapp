@@ -31,6 +31,7 @@ chronic_disease_model = joblib.load('models/chronic_model.sav')
 
 # Load the hepatitis prediction model
 hepatitis_model = joblib.load('models/hepititisc_model.sav')
+jaundice_model = joblib.load('models/jaundice_model.sav')
 
 
 
@@ -46,15 +47,37 @@ with st.sidebar:
         'Heart disease Prediction',
         'Parkison Prediction',
         'Liver prediction',
+        'jaundice prediction',
         'Hepatitis prediction',
         'Lung Cancer Prediction',
         'Chronic Kidney prediction',
         'Breast Cancer Prediction',
+        'About'
 
     ],
         icons=['','activity', 'heart', 'person','person','person','person','bar-chart-fill'],
         default_index=0)
 
+if selected == 'About':
+# Discover Our Team Section
+st.title("Discover Our Team")
+st.write("As a team of passionate individuals, we embarked on a journey to create a user-friendly and efficient application to predict diseases such as Diabetes, Heart Disease, and Lung Cancer.")
+
+st.subheader("Team Members:")
+st.write("""
+* **Kabir Miital** - Team Lead
+* **Aryan Singh**
+* **Ayush**
+""")
+
+st.subheader("Guide:")
+st.write("* **Dr. Gyanender Kumar, M.Tech, Ph.D** - Our mentor and guide, whose invaluable support and expertise have been instrumental in shaping this project.")
+
+st.write("""
+Throughout the development process, we have combined our diverse skills and knowledge to deliver a robust and accurate disease prediction system. We are committed to promoting health awareness and providing a valuable tool for individuals to assess their health risks.
+
+Thank you for choosing our Multiple Disease Prediction Web App. We hope it proves to be a valuable resource for you and others. 
+""")
 
 
 
@@ -912,3 +935,19 @@ if selected == 'Breast Cancer Prediction':
             breast_cancer_result = "The model predicts that you don't have Breast Cancer."
 
         st.success(breast_cancer_result)
+
+if selected == 'Contact Us':  # Or create a dedicated 'Feedback' section
+    st.title("Your Feedback is Valuable!")
+    st.write("Please rate your overall experience in using our Web App")
+
+    rating = st.slider("Rate us", 1, 5, 3, key='rating')  # Create a slider for the rating
+    st.write("★" * rating)  # Display the star rating
+
+    st.text("Thanks for rating!")
+
+    st.write("Have questions or suggestions? We'd love to hear from you.")
+    feedback_text = st.text_area("Enter your feedback here:", height=100)
+
+    if st.button('Submit'):
+        st.success("Thank you for your valuable feedback!")
+        # Optional: Store the feedback in a file or database for later analysis
